@@ -1,0 +1,3 @@
+✖ ERROS SEMÂNTICOS:
+ERRO (Linha 2): Tipo incompatível: o campo '.nome' é do tipo string, mas o valor '18' é do tipo number
+ERRO (Linha 2): Operador '>' inválido para strings. Use '==' ou '!='.

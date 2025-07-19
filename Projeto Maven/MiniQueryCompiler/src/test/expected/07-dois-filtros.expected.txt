@@ -1,0 +1,9 @@
+✔ ANÁLISE SEMÂNTICA VÁLIDA
+
+CÓDIGO JS GERADO:
+// Código gerado automaticamente
+const fs = require('fs');
+
+const input = JSON.parse(fs.readFileSync('data.json', 'utf-8'));
+const filteredData = input.filter(item => item.idade >= 18);
+filteredData = filteredData.filter(item => item.nome !== "Admin");

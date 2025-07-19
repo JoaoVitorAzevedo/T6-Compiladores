@@ -1,0 +1,4 @@
+LOAD "data.json"
+FILTER .nome == "Maria"
+SELECT .email
+SAVE AS "email_da_maria.json"

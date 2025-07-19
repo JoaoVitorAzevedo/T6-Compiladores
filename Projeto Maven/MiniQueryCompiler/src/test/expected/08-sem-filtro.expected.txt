@@ -1,0 +1,11 @@
+✔ ANÁLISE SEMÂNTICA VÁLIDA
+
+CÓDIGO JS GERADO:
+// Código gerado automaticamente
+const fs = require('fs');
+
+const input = JSON.parse(fs.readFileSync('data.json', 'utf-8'));
+const result = input.map(item => ({
+  nome: item.nome,
+  email: item.email
+}));

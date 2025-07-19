@@ -1,0 +1,2 @@
+✖ ERROS SEMÂNTICOS:
+ERRO (Linha 2): Nome do arquivo de saída não pode ser vazio

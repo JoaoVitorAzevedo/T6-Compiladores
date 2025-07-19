@@ -1,0 +1,5 @@
+# O gerador de JS atual vai redeclarar 'filteredData', o que causaria um erro em JS.
+# O teste passa porque valida o código gerado, expondo essa falha.
+LOAD "data.json"
+FILTER .idade >= 18
+FILTER .nome != "Admin"

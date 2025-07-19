@@ -1,0 +1,4 @@
+# O gerador de JS atual vai tentar usar 'filteredData', que não foi definida.
+# O teste passa porque valida o código gerado, expondo essa falha.
+LOAD "data.json"
+SELECT .nome, .email

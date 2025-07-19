@@ -1,0 +1,3 @@
+LOAD "data.json"
+FILTER .nome > 18  # Erro: string com operador numérico
+SELECT .email

@@ -1,0 +1,4 @@
+# O validador atual não tem um tipo para .salario, então ele não reporta erro.
+# Isso mostra uma oportunidade de melhoria no MiniQuerySemanticValidator.
+LOAD "data.json"
+FILTER .salario > 5000
