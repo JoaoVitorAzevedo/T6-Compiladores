@@ -5,7 +5,9 @@
 # **MiniQuery Compiler**
 
 **Projeto T6 - Construção de Compiladores**
+
 **Autor**: [João Vitor Azevedo](https://github.com/JoaoVitorAzevedo)
+
 **Repositório**: [github.com/JoaoVitorAzevedo/T6-Compiladores](https://github.com/JoaoVitorAzevedo/T6-Compiladores)
 
 -----
