@@ -97,7 +97,8 @@ O comando *mvn clean package* irá compilar o projeto e criar um JAR executável
 ```bash
 # 1. Clone o repositório
 git clone https://github.com/JoaoVitorAzevedo/T6-Compiladores.git
-cd T6-Compiladores
+cd T6-Compiladores/Projeto\ Maven/MiniQueryCompiler/
+
 
 # 2. Compile e empacote o projeto
 mvn clean package
