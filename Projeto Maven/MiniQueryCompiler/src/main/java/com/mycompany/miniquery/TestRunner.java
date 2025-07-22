@@ -29,7 +29,7 @@ public class TestRunner {
     private static final String EXPECTED_DIR = "src/test/expected/";
 
     public static void main(String[] args) throws IOException {
-        System.out.println("🚀 Iniciando execução dos testes...");
+        System.out.println("Iniciando execucao dos testes...");
         long startTime = System.currentTimeMillis();
 
         Files.createDirectories(Paths.get(OUTPUT_DIR));
@@ -43,7 +43,7 @@ public class TestRunner {
         generateReport(results);
 
         long duration = System.currentTimeMillis() - startTime;
-        System.out.printf("✅ Testes concluídos em %dms! Verifique os resultados em: %s%n",
+        System.out.printf("Testes concluidos em %dms! Verifique os resultados em: %s%n",
                 duration, Paths.get(OUTPUT_DIR).toAbsolutePath());
     }
 
@@ -75,7 +75,7 @@ public class TestRunner {
             );
 
         } catch (Exception e) {
-            result.output = "💥 ERRO DURANTE EXECUÇÃO DO TESTE:\n" + e.getMessage();
+            result.output = "ERRO DURANTE EXECUÇÃO DO TESTE:\n" + e.getMessage();
             result.passed = false;
         }
         return result;
@@ -108,17 +108,17 @@ public class TestRunner {
 
             // Verifica se o validator encontrou erros semânticos.
             if (!validator.getErrors().isEmpty()) {
-                result.append("✖ ERROS SEMÂNTICOS:\n");
+                result.append("ERROS SEMÂNTICOS:\n");
                 validator.getErrors().forEach(err -> result.append(err).append("\n"));
             } else {
                 // Se não há erros, o  mesmo validator é usado para obter os comandos e gerar o código.
-                result.append("✔ ANÁLISE SEMÂNTICA VÁLIDA\n\n");
+                result.append("ANÁLISE SEMÂNTICA VÁLIDA\n\n");
                 JavaScriptGenerator generator = new JavaScriptGenerator();
                 result.append("CÓDIGO JS GERADO:\n")
                       .append(generator.generate(validator.getCommands()));
             }
         } catch (Exception e) {
-            result.append("💥 ERRO DURANTE A ANÁLISE:\n")
+            result.append("ERRO DURANTE A ANÁLISE:\n")
                   .append(e.getClass().getSimpleName())
                   .append(": ")
                   .append(e.getMessage());

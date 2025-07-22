@@ -1,4 +1,4 @@
-✔ ANÁLISE SEMÂNTICA VÁLIDA
+ANÁLISE SEMÂNTICA VÁLIDA
 
 CÓDIGO JS GERADO:
 // Código gerado automaticamente

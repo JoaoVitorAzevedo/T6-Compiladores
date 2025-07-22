@@ -169,11 +169,3 @@ src/
 │   └── resources/                     # Arquivos de entrada dos testes (.mq)
 target/                                # JARs compilados e resultados dos testes
 ```
-
-
-
-## **Vídeo**
-https://github.com/user-attachments/assets/b967d094-5fad-49af-92ae-f97067faf979
-
-
-
